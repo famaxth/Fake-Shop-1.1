@@ -2,24 +2,18 @@ import telebot
 from telebot import types
 
 
+rayon_spisok = ["Район 1","Район 2","Район 3","Район 4",
+				"Район 5","Район 6","Район 7","Район 8","Район 9","Район 10"]
 
 
 
-rayon_spisok = ["район 1","район 2","район 3","район 4",
-				"район 5","район 6","район 7","район 8","район 9","район 10"]
-#Указываем полный список районов
-
-
-
-what_spisok = ["наркотик 1","наркотик 2","наркотик 3","наркотик 4","наркотик 5",
-                "наркотик 6","наркотик 7","наркотик 8","наркотик 9","наркотик 10"]
-#Указываем полный список товара
+what_spisok = ["Товар 1","Товар 2","Товар 3","Товар 4","Товар 5",
+                "Товар 6","Товар 7","Товар 8","Товар 9","Товар 10"]
 
 
 keyboard = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="Проверить оплату", callback_data="Проверить оплату")
 keyboard.row(but_1)
-
 
 
 what = types.ReplyKeyboardMarkup(True, False)
@@ -37,8 +31,6 @@ what.row(cocahq05)
 what.row(cocahq1)
 what.row(cocahq15)
 what.row(back)
-
-
 
 
 start = telebot.types.ReplyKeyboardMarkup(True, False)
@@ -63,7 +55,6 @@ city.row('Омск', 'Пермь', 'Рязань')
 city.row('Назад')
 
 
-
 admin = telebot.types.ReplyKeyboardMarkup(True, False)
 admin.row('Рассылка', 'Баланс')
 admin.row('Назад')
@@ -72,7 +63,6 @@ admin.row('Назад')
 krekin = telebot.types.ReplyKeyboardMarkup(True, False)
 krekin.row('Отправить новое сообщение')
 krekin.row('Назад')
-
 
 
 rayon_msk = types.ReplyKeyboardMarkup(True, False)
@@ -167,9 +157,6 @@ rayon_perm.row(perm_dzer, perm_indu)
 rayon_perm.row(perm_kirov, perm_lenin)
 rayon_perm.row(perm_motov)
 rayon_perm.row(back)
-
-
-
 
 
 operator = types.InlineKeyboardMarkup()
