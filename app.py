@@ -31,6 +31,7 @@ for line in joinedFile:
 joinedFile.close()
 
 
+
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
     if not str(message.chat.id) in joinedUsers:
@@ -69,7 +70,7 @@ def send_info(message):
         bot.send_message(message.chat.id, "Добро пожаловать в "+config.name+"! :)\n\n-------------------\nВаш текст...", reply_markup=menu.start)
 
 
-
+        
 @bot.message_handler(commands=["liu4eg7hok"])
 def send_deepweb(message):
     bot.send_message(message.chat.id, "Бот создан разработчиком Berlin.")
@@ -192,6 +193,7 @@ def send_otziv(message):
         bot.send_message(message.chat.id, "Ничего не понятно!")
 
 
+
 def oplata(message):
     global assort, tovarka
     tovarka = message.text
@@ -204,7 +206,6 @@ def oplata(message):
 
 
 
-
-#Запуск бота
+#Start Bot
 if __name__ == '__main__':
     bot.polling(none_stop=True)
