@@ -1,4 +1,4 @@
-# Fake Shop v1.0
+# Fake Shop v1.1
 This project was created by me as a demonstration of the work of fake stores in Telegram. In the bot, you can configure all the buttons (for receiving responses), send a newsletter, change the settings and the name of the store.
 
 > Attention! This project does not encourage the use of such programs. It was created for the purpose of obtaining information in the field of information security and as a clear example of the use of programming languages for bad purposes.
